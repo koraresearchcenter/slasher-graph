@@ -1,0 +1,518 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PixelArtHeader from '../components/PixelArtHeader.astro';
+import P5Background from '../components/P5Background.astro';
+---
+
+<Layout title="SLASHER STATS: The Data Behind the Masks">
+	<P5Background />
+	
+	<main>
+		<PixelArtHeader />
+
+		<!-- Introduction -->
+		<section class="intro-section">
+			<div class="container">
+				<div class="narrative-text">
+					<h2 class="section-title pixel-text">TWO ICONS. ONE LEGACY.</h2>
+					<p class="body-text">
+						In 1978, a masked figure stalked the streets of Haddonfield, Illinois. 
+						Two years later, a drowned boy returned from the depths of Crystal Lake. 
+						These weren't just horror movies—they were cultural phenomena that would 
+						define a generation and spawn franchises spanning over four decades.
+					</p>
+					<p class="body-text">
+						Michael Myers and Jason Voorhees became more than characters. They became 
+						icons of fear, symbols of unstoppable evil, and surprisingly, generators 
+						of massive box office revenue. But who truly reigns supreme in the pantheon 
+						of slasher cinema?
+					</p>
+					<p class="body-text">
+						Let's dive into the data.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Character Introductions -->
+		<section class="character-intro">
+			<div class="container">
+				<div class="character-cards">
+					<div class="character-card myers-card" id="myers-card">
+						<div class="card-header">
+							<h3 class="pixel-text">MICHAEL MYERS</h3>
+							<span class="franchise-tag">HALLOWEEN</span>
+						</div>
+						<div class="card-body">
+							<div class="character-stat">
+								<span class="label">FIRST KILL:</span>
+								<span class="value">1978</span>
+							</div>
+							<div class="character-stat">
+								<span class="label">TOTAL FILMS:</span>
+								<span class="value">12</span>
+							</div>
+							<div class="character-stat">
+								<span class="label">ESTIMATED KILLS:</span>
+								<span class="value">166</span>
+							</div>
+							<div class="character-stat">
+								<span class="label">WEAPON:</span>
+								<span class="value">CHEF'S KNIFE</span>
+							</div>
+							<div class="character-stat">
+								<span class="label">LOCATION:</span>
+								<span class="value">HADDONFIELD, IL</span>
+							</div>
+						</div>
+						<div class="pixel-border"></div>
+					</div>
+
+					<div class="character-card jason-card" id="jason-card">
+						<div class="card-header">
+							<h3 class="pixel-text">JASON VOORHEES</h3>
+							<span class="franchise-tag">FRIDAY THE 13TH</span>
+						</div>
+						<div class="card-body">
+							<div class="character-stat">
+								<span class="label">FIRST KILL:</span>
+								<span class="value">1981</span>
+							</div>
+							<div class="character-stat">
+								<span class="label">TOTAL FILMS:</span>
+								<span class="value">12</span>
+							</div>
+							<div class="character-stat">
+								<span class="label">ESTIMATED KILLS:</span>
+								<span class="value">170</span>
+							</div>
+							<div class="character-stat">
+								<span class="label">WEAPON:</span>
+								<span class="value">MACHETE</span>
+							</div>
+							<div class="character-stat">
+								<span class="label">LOCATION:</span>
+								<span class="value">CRYSTAL LAKE, NJ</span>
+							</div>
+						</div>
+						<div class="pixel-border"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Kill Count Visualization -->
+		<section class="data-viz-section">
+			<div class="container">
+				<h2 class="section-title pixel-text">THE BODY COUNT</h2>
+				<div class="narrative-text">
+					<p class="body-text">
+						Every slasher film follows a formula: teenagers make poor decisions, 
+						and the killer makes them pay. But how do our two icons compare when 
+						it comes to their signature metric?
+					</p>
+				</div>
+				
+				<!-- Head-to-Head Kill Count Display -->
+				<div class="kill-count-showdown">
+					<div class="killer-count-card michael-card">
+						<div class="killer-name pixel-text">MICHAEL MYERS</div>
+						<div class="kill-counter" id="michaelKillCount">0</div>
+						<div class="kill-label">TOTAL KILLS</div>
+						<div class="kill-stats">
+							<div class="kill-stat-item">
+								<span class="stat-label">AVG PER FILM:</span>
+								<span class="stat-value">13.8</span>
+							</div>
+							<div class="kill-stat-item">
+								<span class="stat-label">DEADLIEST FILM:</span>
+								<span class="stat-value">27 (Halloween Kills)</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="vs-badge">
+						<div class="vs-text pixel-text">VS</div>
+						<div class="difference-text">+4 KILLS</div>
+					</div>
+					
+					<div class="killer-count-card jason-card">
+						<div class="killer-name pixel-text">JASON VOORHEES</div>
+						<div class="kill-counter winner" id="jasonKillCount">0</div>
+						<div class="kill-label">TOTAL KILLS</div>
+						<div class="kill-stats">
+							<div class="kill-stat-item">
+								<span class="stat-label">AVG PER FILM:</span>
+								<span class="stat-value">17.0</span>
+							</div>
+							<div class="kill-stat-item">
+								<span class="stat-label">DEADLIEST FILM:</span>
+								<span class="stat-value">28 (Jason X)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="insight-box">
+					<p class="pixel-text">Jason edges out Michael with 170 total kills vs 166, 
+					but the story gets more interesting when we look at kills per film...</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Timeline Visualization -->
+		<section class="timeline-section">
+			<div class="container">
+				<h2 class="section-title pixel-text">// FRANCHISE TIMELINE //</h2>
+				<div class="timeline">
+					<div class="timeline-line"></div>
+					
+					<div class="timeline-item">
+						<div class="timeline-content left">
+							<h3>HALLOWEEN (1978)</h3>
+							<p>Michael Myers debuts with 5 kills. Budget: $325K → Box Office: $70M. An instant horror classic with 96% on Rotten Tomatoes.</p>
+						</div>
+						<div class="timeline-year">1978</div>
+						<div></div>
+					</div>
+
+					<div class="timeline-item">
+						<div></div>
+						<div class="timeline-year">1980</div>
+						<div class="timeline-content right">
+							<h3>FRIDAY THE 13TH (1980)</h3>
+							<p>Jason's franchise begins (though Pamela is the killer). Budget: $550K → Box Office: $59.8M. A slasher phenomenon is born.</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-content left">
+							<h3>HALLOWEEN II (1981)</h3>
+							<p>Michael returns with 9 kills. Continues directly from the first film's events.</p>
+						</div>
+						<div class="timeline-year">1981</div>
+						<div></div>
+					</div>
+
+					<div class="timeline-item">
+						<div></div>
+						<div class="timeline-year">1981</div>
+						<div class="timeline-content right">
+							<h3>FRIDAY 13TH PART 2</h3>
+							<p>Jason finally takes center stage as the killer with 9 kills. The machete legend begins.</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-content left">
+							<h3>THE GOLDEN AGE</h3>
+							<p>1982-1989: Both franchises dominate the 80s with multiple sequels. Jason releases 5 films, Michael releases 3.</p>
+						</div>
+						<div class="timeline-year">1980s</div>
+						<div></div>
+					</div>
+
+					<div class="timeline-item">
+						<div></div>
+						<div class="timeline-year">2001</div>
+						<div class="timeline-content right">
+							<h3>JASON X</h3>
+							<p>Jason's deadliest film with 28 kills. Jason goes to space in the year 2455.</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-content left">
+							<h3>HALLOWEEN (2018)</h3>
+							<p>Michael's comeback. Budget: $10M → Box Office: $255M. The highest-grossing Halloween film.</p>
+						</div>
+						<div class="timeline-year">2018</div>
+						<div></div>
+					</div>
+
+					<div class="timeline-item">
+						<div></div>
+						<div class="timeline-year">2021</div>
+						<div class="timeline-content right">
+							<h3>HALLOWEEN KILLS</h3>
+							<p>Michael's most brutal outing with 27 kills in a single film. Pure carnage.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Box Office Performance -->
+		<section class="data-viz-section dark-section">
+			<div class="container">
+				<h2 class="section-title pixel-text">MONEY & MAYHEM</h2>
+				<div class="narrative-text">
+					<p class="body-text">
+						Horror movies are notoriously profitable. Low budgets, massive returns. 
+						But which franchise proved more lucrative for the studios?
+					</p>
+				</div>
+				<div class="viz-container">
+					<canvas id="boxOfficeChart"></canvas>
+				</div>
+				<div class="comparison-stats">
+					<div class="comparison-stat">
+						<h3 class="pixel-text">HALLOWEEN</h3>
+						<div class="stat-detail">
+							<span class="label">Total Box Office:</span>
+							<span class="value orange-text">$903.6M</span>
+						</div>
+						<div class="stat-detail">
+							<span class="label">Total Budget:</span>
+							<span class="value">$113.8M</span>
+						</div>
+						<div class="stat-detail">
+							<span class="label">ROI:</span>
+							<span class="value orange-text">694%</span>
+						</div>
+					</div>
+					<div class="comparison-stat">
+						<h3 class="pixel-text">FRIDAY THE 13TH</h3>
+						<div class="stat-detail">
+							<span class="label">Total Box Office:</span>
+							<span class="value orange-text">$691.5M</span>
+						</div>
+						<div class="stat-detail">
+							<span class="label">Total Budget:</span>
+							<span class="value">$95.6M</span>
+						</div>
+						<div class="stat-detail">
+							<span class="label">ROI:</span>
+							<span class="value orange-text">624%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Critical Reception -->
+		<section class="data-viz-section">
+			<div class="container">
+				<h2 class="section-title pixel-text">CRITICS VS. CARNAGE</h2>
+				<div class="narrative-text">
+					<p class="body-text">
+						Slasher films have never been critical darlings. But some entries 
+						transcended the genre. Let's see how the critics scored each film.
+					</p>
+				</div>
+				<div class="viz-container">
+					<canvas id="criticsChart"></canvas>
+				</div>
+			</div>
+		</section>
+
+		<!-- Interactive Kill Methods -->
+		<section class="interactive-section">
+			<div class="container">
+				<h2 class="section-title pixel-text">TOOLS OF THE TRADE</h2>
+				<div class="narrative-text">
+					<p class="body-text">
+						Every killer has their signature. Michael prefers the intimacy of 
+						a chef's knife. Jason favors his iconic machete. But both have 
+						shown remarkable creativity with their methods.
+					</p>
+				</div>
+				<div class="weapons-display">
+					<div class="weapon-showcase myers-weapons">
+						<h3 class="pixel-text">MICHAEL'S ARSENAL</h3>
+						<div class="weapon-stat">
+							<span class="stat-label">Unique Weapons:</span>
+							<span class="stat-value">15</span>
+						</div>
+						<ul class="weapon-list">
+							<li>Chef's Knife (Primary)</li>
+							<li>Strangulation / Neck-snapping</li>
+							<li>Impaling on objects</li>
+							<li>Head crushing (bare hands)</li>
+							<li>Blunt instruments</li>
+							<li>Environmental objects</li>
+						</ul>
+					</div>
+					<div class="weapon-showcase jason-weapons">
+						<h3 class="pixel-text">JASON'S ARSENAL</h3>
+						<div class="weapon-stat">
+							<span class="stat-label">Unique Weapons:</span>
+							<span class="stat-value">25</span>
+						</div>
+						<p class="body-text">
+							Jason has used everything from his signature machete to 
+							sleeping bags, harpoon guns, and even liquid nitrogen. 
+							His creativity knows no bounds.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Peak Performance -->
+		<section class="data-viz-section dark-section">
+			<div class="container">
+				<h2 class="section-title pixel-text">PEAK PERFORMANCE</h2>
+				<div class="narrative-text">
+					<p class="body-text">
+						Every franchise has its high point—the film where everything 
+						came together (or fell spectacularly apart). Let's look at 
+						the extremes.
+					</p>
+				</div>
+				<div class="peak-stats">
+					<div class="peak-card">
+						<h3 class="pixel-text orange-text">MOST KILLS (SINGLE FILM)</h3>
+						<div class="peak-comparison">
+							<div class="peak-item">
+								<span class="franchise">HALLOWEEN</span>
+								<span class="peak-value">27</span>
+								<span class="film-name">Halloween Kills (2021)</span>
+							</div>
+							<div class="peak-item winner">
+								<span class="franchise">FRIDAY THE 13TH</span>
+								<span class="peak-value">28</span>
+								<span class="film-name">Jason X (2001)</span>
+							</div>
+						</div>
+					</div>
+					<div class="peak-card">
+						<h3 class="pixel-text orange-text">HIGHEST BOX OFFICE</h3>
+						<div class="peak-comparison">
+							<div class="peak-item winner">
+								<span class="franchise">HALLOWEEN</span>
+								<span class="peak-value">$255.5M</span>
+								<span class="film-name">Halloween (2018)</span>
+							</div>
+							<div class="peak-item">
+								<span class="franchise">FRIDAY THE 13TH</span>
+								<span class="peak-value">$116.6M</span>
+								<span class="film-name">Freddy vs. Jason (2003)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Scrollytelling Section -->
+		<section class="scrolly-section">
+			<div class="scrolly-container">
+				<div class="scrolly-graphic">
+					<canvas id="scrollyCanvas"></canvas>
+				</div>
+				<div class="scrolly-text">
+					<div class="step" data-step="0">
+						<h3 class="pixel-text">THE FIRST KILL</h3>
+						<p>Michael Myers made his debut in 1978 with just 5 kills. 
+						The film cost $325,000 and made $70 million—a staggering 
+						21,438% return on investment.</p>
+					</div>
+					<div class="step" data-step="1">
+						<h3 class="pixel-text">JASON RISES</h3>
+						<p>Jason didn't actually kill anyone in the first Friday the 13th 
+						(that was his mother). He took over in Part 2 (1981) with 9 kills 
+						and never looked back.</p>
+					</div>
+					<div class="step" data-step="2">
+						<h3 class="pixel-text">THE GOLDEN AGE</h3>
+						<p>The 1980s saw both franchises at their peak output. Between 
+						1980-1989, there were 9 Friday the 13th films and 4 Halloween films.</p>
+					</div>
+					<div class="step" data-step="3">
+						<h3 class="pixel-text">MODERN REVIVALS</h3>
+						<p>The 2018 Halloween reboot proved there's still massive appetite 
+						for these franchises, earning more than the entire original trilogy 
+						combined (adjusted for inflation).</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Final Comparison -->
+		<section class="final-section">
+			<div class="container">
+				<h2 class="section-title pixel-text">THE VERDICT</h2>
+				<div class="narrative-text">
+					<p class="body-text">
+						So who wins? Like any good horror franchise, it depends on 
+						how you measure success.
+					</p>
+				</div>
+				<div class="verdict-grid">
+					<div class="verdict-card">
+						<h3 class="pixel-text">MICHAEL MYERS WINS:</h3>
+						<ul class="verdict-list">
+							<li>✓ Total Box Office ($903.6M vs $691.5M)</li>
+							<li>✓ Highest Single Film Gross ($255.5M)</li>
+							<li>✓ Better Critical Reception (avg)</li>
+							<li>✓ More Iconic Original Film</li>
+							<li>✓ Better ROI</li>
+						</ul>
+					</div>
+					<div class="verdict-card">
+						<h3 class="pixel-text">JASON VOORHEES WINS:</h3>
+						<ul class="verdict-list">
+							<li>✓ Total Kill Count (170 vs 166)</li>
+							<li>✓ Highest Single Film Kills (28)</li>
+							<li>✓ More Unique Weapons (25 vs 15)</li>
+							<li>✓ Faster Kill Rate (6.5 min vs 7.3 min)</li>
+							<li>✓ More Geographical Diversity</li>
+						</ul>
+					</div>
+				</div>
+				<div class="final-text">
+					<p class="body-text">
+						In the end, both Michael Myers and Jason Voorhees have earned 
+						their places in the horror hall of fame. They've terrified 
+						audiences for over 40 years, generated billions in revenue, 
+						and created a blueprint that countless imitators have followed.
+					</p>
+					<p class="body-text">
+						The real winners? The fans who keep coming back for more.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer" id="footer-trigger">
+			<div class="container">
+				<p class="pixel-text">DATA VISUALIZATION BY <a href="https://www.koraresearchcenter.org/">Kora Research Center</a></p>
+				<p class="footer-text">All data sourced from box office records, film databases, and fan wikis.</p>
+				<p class="footer-text">Built with Astro, Chart.js, p5.js.</p>
+				<p class="footer-text" style="margin-top: 20px; color: #666;">Thanks for scrolling... or should we say...</p>
+			</div>
+		</footer>
+	</main>
+
+	<!-- Jump Scare Overlay -->
+	<div id="jump-scare" class="jump-scare-overlay">
+		<div class="jump-scare-content">
+			<div class="scare-text pixel-text">THEY'RE BEHIND YOU!</div>
+			<div class="scare-faces">
+				<div class="scare-face michael-face">
+					<div class="mask"></div>
+					<div class="knife">🔪</div>
+				</div>
+				<div class="scare-face jason-face">
+					<div class="hockey-mask"></div>
+					<div class="machete">🪓</div>
+				</div>
+			</div>
+			<div class="blood-drip"></div>
+		</div>
+	</div>
+
+	<!-- Load Chart.js -->
+	<script is:inline src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</Layout>
+
+<!-- Client-side scripts - Load after Chart.js -->
+<script>
+	// Import and execute the main script
+	import '../script.js';
+	
+	// Debug log
+	console.log('Script loaded, waiting for DOM...');
+</script>

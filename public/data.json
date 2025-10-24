@@ -1,0 +1,315 @@
+{
+  "Slashers": {
+    "Michael_Myers": {
+      "Name": "Michael Myers",
+      "Franchise": "Halloween",
+      "First_Appearance": 1978,
+      "Total_Films": 12,
+      "Estimated_Kills": 166,
+      "Average_Kills_Per_Film": 13.83,
+      "Highest_Single_Film_Kill_Count": {
+        "Count": 27,
+        "Film": "Halloween Kills (2021)"
+      },
+      "Primary_Location": "Haddonfield, Illinois, USA",
+      "Weapon_of_Choice": "Chef's Knife",
+      "Unique_Weapons_Used": 15,
+      "Common_Kill_Methods": [
+        "Knife stabbing (primary)",
+        "Strangulation / Neck-snapping",
+        "Impaling on various objects (walls, doors, tools)",
+        "Head crushing (bare hands, against surfaces)",
+        "Bludgeoning with blunt instruments",
+        "Use of environmental objects (boiling water, fluorescent light tube, tripod)"
+      ],
+      "Mask_Variations": 9,
+      "Portrayed_By": {
+        "Count": "9+",
+        "Actors": [
+          "Nick Castle",
+          "Tony Moran",
+          "Will Sandin",
+          "Dick Warlock",
+          "George P. Wilbur",
+          "Don Shanks",
+          "Chris Durand",
+          "Tyler Mane",
+          "James Jude Courtney"
+        ]
+      },
+      "Confirmed_Deaths_Onscreen": 6,
+      "Survived_Gunshots": 16,
+      "Survived_Stabbings": 15,
+      "Supernatural_Resurrections": 4,
+      "Nature_of_Immortality": "Ambiguous and varies by timeline. Described as 'purely and simply evil.' The 'Thorn' timeline attributes his power to a druidic curse. The 'H40' timeline suggests he transcends and gains strength with each kill, becoming a supernatural embodiment of fear.",
+      "Signature_Kills": [
+        "Impales Bob against a wall with a chef's knife, tilting his head to admire his work (1978)",
+        "Drowns and scalds a nurse in a hydrotherapy tub (1981)",
+        "Crushes a man's skull with his bare hands (1988)",
+        "Impales a firefighter on his own halligan bar (2021)",
+        "Stabs a victim with a broken fluorescent light tube (2021)"
+      ],
+      "Killing_Style": "Silent, methodical, and ritualistic. An ambush predator who stalks victims to build suspense. Often uses items from the victim's environment, turning domestic spaces into slaughterhouses.",
+      "Physical_Attributes": {
+        "Height_in_Feet": 6.0,
+        "Build": "Strong but human-like in most depictions",
+        "Mask": "White, featureless mask (originally a modified Captain Kirk mask)"
+      },
+      "Franchise_Stats": {
+        "Total_Franchise_Box_Office_USD": 903600000,
+        "Total_Franchise_Budget_USD": 113825000,
+        "Average_Box_Office_Per_Film_USD": 75300000,
+        "Average_Kill_Interval_Minutes": 7.3,
+        "Highest_Single_Scene_Kills": 11,
+        "Film_by_Film_Stats": [
+          {
+            "Film": "Halloween (1978)",
+            "Kills": 5,
+            "Budget_USD": 325000,
+            "Box_Office_USD": 70000000,
+            "Rotten_Tomatoes_Percent": 96,
+            "Metacritic_Score": 87
+          },
+          {
+            "Film": "Halloween II (1981)",
+            "Kills": 9,
+            "Budget_USD": 2500000,
+            "Box_Office_USD": 25500000,
+            "Rotten_Tomatoes_Percent": 33,
+            "Metacritic_Score": 40
+          },
+          {
+            "Film": "Halloween 4: The Return of Michael Myers (1988)",
+            "Kills": 15,
+            "Budget_USD": 5000000,
+            "Box_Office_USD": 17800000,
+            "Rotten_Tomatoes_Percent": 40,
+            "Metacritic_Score": 34
+          },
+          {
+            "Film": "Halloween 5: The Revenge of Michael Myers (1989)",
+            "Kills": 12,
+            "Budget_USD": 6000000,
+            "Box_Office_USD": 11600000,
+            "Rotten_Tomatoes_Percent": 13,
+            "Metacritic_Score": 28
+          },
+          {
+            "Film": "Halloween: The Curse of Michael Myers (1995)",
+            "Kills": 17,
+            "Budget_USD": 5000000,
+            "Box_Office_USD": 15100000,
+            "Rotten_Tomatoes_Percent": 9,
+            "Metacritic_Score": 10
+          },
+          {
+            "Film": "Halloween H20: 20 Years Later (1998)",
+            "Kills": 6,
+            "Budget_USD": 17000000,
+            "Box_Office_USD": 55000000,
+            "Rotten_Tomatoes_Percent": 52,
+            "Metacritic_Score": 52
+          },
+          {
+            "Film": "Halloween: Resurrection (2002)",
+            "Kills": 11,
+            "Budget_USD": 13000000,
+            "Box_Office_USD": 37600000,
+            "Rotten_Tomatoes_Percent": 12,
+            "Metacritic_Score": 19
+          },
+          {
+            "Film": "Halloween (2007)",
+            "Kills": 18,
+            "Budget_USD": 15000000,
+            "Box_Office_USD": 80300000,
+            "Rotten_Tomatoes_Percent": 28,
+            "Metacritic_Score": 47
+          },
+          {
+            "Film": "Halloween II (2009)",
+            "Kills": 15,
+            "Budget_USD": 15000000,
+            "Box_Office_USD": 39400000,
+            "Rotten_Tomatoes_Percent": 23,
+            "Metacritic_Score": 35
+          },
+          {
+            "Film": "Halloween (2018)",
+            "Kills": 17,
+            "Budget_USD": 10000000,
+            "Box_Office_USD": 255500000,
+            "Rotten_Tomatoes_Percent": 79,
+            "Metacritic_Score": 67
+          },
+          {
+            "Film": "Halloween Kills (2021)",
+            "Kills": 27,
+            "Budget_USD": 20000000,
+            "Box_Office_USD": 131600000,
+            "Rotten_Tomatoes_Percent": 39,
+            "Metacritic_Score": 42
+          },
+          {
+            "Film": "Halloween Ends (2022)",
+            "Kills": 9,
+            "Budget_USD": 5000000,
+            "Box_Office_USD": 104200000,
+            "Rotten_Tomatoes_Percent": 40,
+            "Metacritic_Score": 47
+          }
+        ]
+      },
+      "Timelines": [
+        {
+          "Name": "Original Timeline",
+          "Films": ["Halloween (1978)", "Halloween II (1981)", "Halloween 4", "Halloween 5", "Halloween: The Curse of Michael Myers"]
+        },
+        {
+          "Name": "H20 Timeline",
+          "Films": ["Halloween (1978)", "Halloween II (1981)", "Halloween H20", "Halloween: Resurrection"]
+        },
+        {
+          "Name": "H40/Blumhouse Timeline",
+          "Films": ["Halloween (1978)", "Halloween (2018)", "Halloween Kills", "Halloween Ends"]
+        },
+        {
+          "Name": "Reboot Timeline",
+          "Films": ["Halloween (2007)", "Halloween II (2009)"]
+        },
+        {
+          "Name": "Anthology (No Myers)",
+          "Films": ["Halloween III: Season of the Witch"]
+        }
+      ]
+    },
+    "Jason_Voorhees": {
+      "Name": "Jason Voorhees",
+      "Franchise": "Friday the 13th",
+      "First_Appearance": 1980,
+      "Total_Films": 12,
+      "Estimated_Kills": 170,
+      "Average_Kills_Per_Film_as_Killer": 17.0,
+      "Highest_Single_Film_Kill_Count": {
+        "Count": 28,
+        "Film": "Jason X (2001)"
+      },
+      "Primary_Location": "Camp Crystal Lake, New Jersey, USA",
+      "Weapon_of_Choice": "Machete",
+      "Unique_Weapons_Used": 25,
+      "Geographical_Kill_Locations": 6,
+      "Franchise_Stats": {
+        "Total_Franchise_Box_Office_USD": 691500000,
+        "Total_Franchise_Budget_USD": 95550000,
+        "Average_Box_Office_Per_Film_USD": 57625000,
+        "Average_Kill_Interval_Minutes": 6.5,
+        "Highest_Single_Scene_Kills": 18,
+        "Film_by_Film_Stats": [
+          {
+            "Film": "Friday the 13th (1980)",
+            "Kills": 0,
+            "Budget_USD": 550000,
+            "Box_Office_USD": 59800000,
+            "Rotten_Tomatoes_Percent": 63,
+            "Metacritic_Score": 22
+          },
+          {
+            "Film": "Friday the 13th Part 2 (1981)",
+            "Kills": 9,
+            "Budget_USD": 1250000,
+            "Box_Office_USD": 21700000,
+            "Rotten_Tomatoes_Percent": 28,
+            "Metacritic_Score": 26
+          },
+          {
+            "Film": "Friday the 13th Part III (1982)",
+            "Kills": 12,
+            "Budget_USD": 2250000,
+            "Box_Office_USD": 36700000,
+            "Rotten_Tomatoes_Percent": 7,
+            "Metacritic_Score": 30
+          },
+          {
+            "Film": "Friday the 13th: The Final Chapter (1984)",
+            "Kills": 13,
+            "Budget_USD": 2600000,
+            "Box_Office_USD": 33000000,
+            "Rotten_Tomatoes_Percent": 20,
+            "Metacritic_Score": 33
+          },
+          {
+            "Film": "Friday the 13th: A New Beginning (1985)",
+            "Kills": 0,
+            "Budget_USD": 2200000,
+            "Box_Office_USD": 22000000,
+            "Rotten_Tomatoes_Percent": 17,
+            "Metacritic_Score": 16
+          },
+          {
+            "Film": "Friday the 13th Part VI: Jason Lives (1986)",
+            "Kills": 18,
+            "Budget_USD": 3000000,
+            "Box_Office_USD": 19500000,
+            "Rotten_Tomatoes_Percent": 50,
+            "Metacritic_Score": 30
+          },
+          {
+            "Film": "Friday the 13th Part VII: The New Blood (1988)",
+            "Kills": 15,
+            "Budget_USD": 2800000,
+            "Box_Office_USD": 19200000,
+            "Rotten_Tomatoes_Percent": 26,
+            "Metacritic_Score": 13
+          },
+          {
+            "Film": "Friday the 13th Part VIII: Jason Takes Manhattan (1989)",
+            "Kills": 17,
+            "Budget_USD": 5000000,
+            "Box_Office_USD": 14300000,
+            "Rotten_Tomatoes_Percent": 8,
+            "Metacritic_Score": 14
+          },
+          {
+            "Film": "Jason Goes to Hell: The Final Friday (1993)",
+            "Kills": 23,
+            "Budget_USD": 3000000,
+            "Box_Office_USD": 15900000,
+            "Rotten_Tomatoes_Percent": 24,
+            "Metacritic_Score": 17
+          },
+          {
+            "Film": "Jason X (2001)",
+            "Kills": 28,
+            "Budget_USD": 14000000,
+            "Box_Office_USD": 17100000,
+            "Rotten_Tomatoes_Percent": 19,
+            "Metacritic_Score": 25
+          },
+          {
+            "Film": "Freddy vs. Jason (2003)",
+            "Kills": 20,
+            "Budget_USD": 30000000,
+            "Box_Office_USD": 116600000,
+            "Rotten_Tomatoes_Percent": 41,
+            "Metacritic_Score": 37
+          },
+          {
+            "Film": "Friday the 13th (2009)",
+            "Kills": 13,
+            "Budget_USD": 19000000,
+            "Box_Office_USD": 92700000,
+            "Rotten_Tomatoes_Percent": 26,
+            "Metacritic_Score": 34
+          }
+        ]
+      }
+    }
+  },
+  "Comparison": {
+    "Total_Films_Combined": 24,
+    "Total_Combined_Kills": 336,
+    "Average_Kills_Per_Film_Combined": 14.0,
+    "Total_Franchise_Box_Office_Combined_USD": 1595100000,
+    "Total_Franchise_Budget_Combined_USD": 209375000
+  }
+}
