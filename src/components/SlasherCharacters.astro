@@ -1,0 +1,403 @@
+---
+---
+
+<div class="slasher-characters">
+    <div class="character michael">
+        <div class="character-body">
+            <!-- Head/Mask -->
+            <div class="head">
+                <div class="mask-white"></div>
+                <div class="eye left-eye"></div>
+                <div class="eye right-eye"></div>
+            </div>
+            <!-- Body -->
+            <div class="torso">
+                <div class="coveralls"></div>
+            </div>
+            <!-- Arms -->
+            <div class="arm left-arm"></div>
+            <div class="arm right-arm">
+                <div class="knife"></div>
+            </div>
+            <!-- Legs -->
+            <div class="leg left-leg"></div>
+            <div class="leg right-leg"></div>
+        </div>
+    </div>
+
+    <div class="vs-divider">
+        <div class="moon"></div>
+    </div>
+
+    <div class="character jason">
+        <div class="character-body">
+            <!-- Head/Mask -->
+            <div class="head">
+                <div class="hockey-mask"></div>
+                <div class="mask-strap horizontal"></div>
+                <div class="mask-hole left-eye-hole"></div>
+                <div class="mask-hole right-eye-hole"></div>
+                <div class="mask-hole nose-hole"></div>
+            </div>
+            <!-- Body -->
+            <div class="torso jason-shirt">
+                <div class="blood-stain"></div>
+            </div>
+            <!-- Arms -->
+            <div class="arm left-arm">
+                <div class="machete"></div>
+            </div>
+            <div class="arm right-arm"></div>
+            <!-- Legs -->
+            <div class="leg left-leg"></div>
+            <div class="leg right-leg"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+.slasher-characters {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 60px;
+    margin: 40px 0;
+    position: relative;
+    min-height: 300px;
+}
+
+/* VS Divider with Moon */
+.vs-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.moon {
+    width: 80px;
+    height: 80px;
+    background: #f5e6d3;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 20px rgba(245, 230, 211, 0.6),
+        0 0 40px rgba(245, 230, 211, 0.4),
+        inset -10px -10px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Character Base Styles */
+.character {
+    position: relative;
+    filter: drop-shadow(8px 8px 0 rgba(0, 0, 0, 0.5));
+}
+
+.character-body {
+    position: relative;
+    width: 120px;
+    height: 280px;
+}
+
+/* Head */
+.head {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 60px;
+    position: relative;
+}
+
+/* Michael Myers - White Mask */
+.michael .mask-white {
+    width: 100%;
+    height: 100%;
+    background: #e8e8e8;
+    border-radius: 50% 50% 45% 45%;
+    border: 3px solid #1a1a1a;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.michael .eye {
+    position: absolute;
+    width: 12px;
+    height: 16px;
+    background: #000;
+    border-radius: 50%;
+    top: 22px;
+}
+
+.michael .left-eye {
+    left: 10px;
+}
+
+.michael .right-eye {
+    right: 10px;
+}
+
+/* Jason - Hockey Mask */
+.jason .hockey-mask {
+    width: 100%;
+    height: 100%;
+    background: #d4c5b0;
+    border-radius: 50% 50% 45% 45%;
+    border: 3px solid #1a1a1a;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.jason .mask-strap {
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background: #8B0000;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.jason .mask-hole {
+    position: absolute;
+    background: #000;
+    border-radius: 50%;
+}
+
+.jason .left-eye-hole {
+    width: 10px;
+    height: 14px;
+    top: 20px;
+    left: 12px;
+}
+
+.jason .right-eye-hole {
+    width: 10px;
+    height: 14px;
+    top: 20px;
+    right: 12px;
+}
+
+.jason .nose-hole {
+    width: 8px;
+    height: 8px;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Torso */
+.torso {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 90px;
+    border: 3px solid #1a1a1a;
+}
+
+.michael .coveralls {
+    width: 100%;
+    height: 100%;
+    background: #2a3f5f;
+    position: relative;
+}
+
+.michael .coveralls::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #1a1a1a;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.jason .jason-shirt {
+    background: #4a5f4a;
+}
+
+.jason .blood-stain {
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background: #8B0000;
+    top: 20px;
+    right: 10px;
+    border-radius: 50% 40% 50% 40%;
+    opacity: 0.7;
+}
+
+/* Arms */
+.arm {
+    position: absolute;
+    width: 20px;
+    height: 80px;
+    top: 70px;
+    border: 3px solid #1a1a1a;
+}
+
+.michael .left-arm {
+    background: #2a3f5f;
+    left: 15px;
+    transform: rotate(-10deg);
+}
+
+.michael .right-arm {
+    background: #2a3f5f;
+    right: 15px;
+    transform: rotate(10deg);
+}
+
+.jason .left-arm {
+    background: #4a5f4a;
+    left: 15px;
+    transform: rotate(-15deg);
+}
+
+.jason .right-arm {
+    background: #4a5f4a;
+    right: 15px;
+    transform: rotate(10deg);
+}
+
+/* Weapons */
+.knife {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 50px;
+    background: #c0c0c0;
+    border: 2px solid #1a1a1a;
+}
+
+.knife::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 15px solid #c0c0c0;
+    border-bottom: 2px solid #1a1a1a;
+}
+
+.machete {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-20deg);
+    width: 12px;
+    height: 60px;
+    background: #a8a8a8;
+    border: 2px solid #1a1a1a;
+}
+
+.machete::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 20px solid #a8a8a8;
+}
+
+.machete::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 15px;
+    background: #654321;
+    border: 2px solid #1a1a1a;
+    border-radius: 2px;
+}
+
+/* Legs */
+.leg {
+    position: absolute;
+    width: 25px;
+    height: 100px;
+    bottom: 0;
+    border: 3px solid #1a1a1a;
+}
+
+.michael .left-leg,
+.michael .right-leg {
+    background: #2a3f5f;
+}
+
+.jason .left-leg,
+.jason .right-leg {
+    background: #3a3a3a;
+}
+
+.left-leg {
+    left: 25px;
+}
+
+.right-leg {
+    right: 25px;
+}
+
+/* Boots */
+.leg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background: #1a1a1a;
+    border-top: 2px solid #4a4a4a;
+}
+
+/* Hover Animation */
+.character {
+    animation: float 3s ease-in-out infinite;
+}
+
+.michael {
+    animation-delay: 0s;
+}
+
+.jason {
+    animation-delay: 1.5s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .slasher-characters {
+        gap: 30px;
+        min-height: 240px;
+        transform: scale(0.8);
+    }
+    
+    .moon {
+        width: 60px;
+        height: 60px;
+    }
+}
+</style>
+

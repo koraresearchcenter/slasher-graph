@@ -5,7 +5,9 @@
 // Load data
 let slasherData;
 
-fetch('/data.json')
+// Use BASE_URL from Astro's environment to handle subdirectory deployments
+const baseUrl = import.meta.env.BASE_URL || '';
+fetch(`${baseUrl}/data.json`)
     .then(response => response.json())
     .then(data => {
         slasherData = data;
@@ -551,50 +553,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.timeline-item').forEach(item => {
         timelineObserver.observe(item);
     });
-    
-    // Jump Scare on footer scroll
-    initializeJumpScare();
 });
-
-// Jump Scare Function
-function initializeJumpScare() {
-    const footer = document.getElementById('footer-trigger');
-    const jumpScare = document.getElementById('jump-scare');
-    let scareTriggered = false;
-    
-    if (!footer || !jumpScare) return;
-    
-    const scareObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !scareTriggered) {
-                scareTriggered = true;
-                
-                // Delay the scare slightly for suspense
-                setTimeout(() => {
-                    jumpScare.classList.add('active');
-                    
-                    // Make body vibrate (if supported)
-                    if (navigator.vibrate) {
-                        navigator.vibrate([100, 50, 100, 50, 100]);
-                    }
-                    
-                    // Remove after 3 seconds
-                    setTimeout(() => {
-                        jumpScare.classList.remove('active');
-                        setTimeout(() => {
-                            jumpScare.style.display = 'none';
-                        }, 500);
-                    }, 3000);
-                }, 500);
-                
-                scareObserver.unobserve(footer);
-            }
-        });
-    }, { 
-        threshold: 0.3,
-        rootMargin: '0px'
-    });
-    
-    scareObserver.observe(footer);
-}
-
